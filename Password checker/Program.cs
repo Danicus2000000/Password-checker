@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Password_checker
+﻿namespace Password_checker
 {
     static class Program
     {
@@ -16,7 +10,7 @@ namespace Password_checker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new password_checker());
+            Application.Run(new PasswordChecker());
         }
     }
 }

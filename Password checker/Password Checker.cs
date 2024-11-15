@@ -1,27 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Password_checker
+﻿namespace Password_checker
 {
-    public partial class password_checker : Form
+    public partial class PasswordChecker : Form
     {
-        public password_checker()
+        public PasswordChecker()
         {
             InitializeComponent();
         }
-        private void confirm_btn_Click(object sender, EventArgs e)//when you click the confirm button
+        private void ConfirmBtnClick(object sender, EventArgs e)//when you click the confirm button
         {
-            if (usernamentry_txt.Text != "" && passwordentry_txt.Text!="")//if the boxes are not empty
+            if (usernamentry_txt.Text != "" && passwordentry_txt.Text != "")//if the boxes are not empty
             {
                 advice_lbl.Text = "Advice:";//resets the advice label
-                char[] password = passwordentry_txt.Text.ToArray();//converts the password to an array of the individual characters
+                char[] password = [.. passwordentry_txt.Text];//converts the password to an array of the individual characters
                 string[] username = usernamentry_txt.Text.Split(' ');//converts the username to an array of the individual words
                 bool gotcap = false;//stores whether password has a capital
                 bool gotnoncap = false;//stores whether the password has a lower case letter

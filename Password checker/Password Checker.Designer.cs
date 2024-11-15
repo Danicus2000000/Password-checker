@@ -1,6 +1,6 @@
 ﻿namespace Password_checker
 {
-    partial class password_checker
+    partial class PasswordChecker
     {
         /// <summary>
         /// Required designer variable.
@@ -68,7 +68,7 @@
             this.confirm_btn.TabIndex = 2;
             this.confirm_btn.Text = "Enter";
             this.confirm_btn.UseVisualStyleBackColor = true;
-            this.confirm_btn.Click += new System.EventHandler(this.confirm_btn_Click);
+            this.confirm_btn.Click += new System.EventHandler(this.ConfirmBtnClick);
             // 
             // question_lbl
             // 
